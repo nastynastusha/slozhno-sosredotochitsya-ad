@@ -143,3 +143,40 @@ decorated-zone::after {
   line-height: 23.4px;
   word-wrap: break-word;
 }
+
+.main {
+  padding-block-start: 20px;
+}
+
+.main__section {
+  display: grid;
+  margin-block-start: 30px;
+}
+
+.section__title {
+  color: var(--accent-color);
+  margin-block-end: 20px;
+}
+
+.item__description {
+  margin-block-start: 10px;
+  margin-block-end: 20px;
+  color: var(--text-color);
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--text-color);
+}
