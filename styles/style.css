@@ -181,6 +181,7 @@ decorated-zone::after {
   outline: 1px solid var(--text-color);
 }
 
+/*для планшетов*/
 @media (min-width: 1024px) {
     .section__container-second {
         display: grid;
