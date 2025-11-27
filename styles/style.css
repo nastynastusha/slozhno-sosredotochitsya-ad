@@ -180,3 +180,42 @@ decorated-zone::after {
 .link:focus-visible {
   outline: 1px solid var(--text-color);
 }
+
+@media (min-width: 1024px) {
+    .section__container-second {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        /*grid-auto-flow: column;*/
+        /*padding-block-end: 20px;*/
+    }
+
+    .section__container-item {
+        grid-row: 1;
+        /*margin-block-end: 20px;*/
+    }
+}
+
+@media (width >= 1024px) {
+    .header__title {
+        padding-block-start: 273px;
+    }
+
+    .header__title-description {
+        margin-block-start: 114px;
+    }
+}
+@media (width >= 1024px) {
+    .header__theme-menu-list {
+        flex-direction: row;
+    }
+}
+
+@media (width >= 1024px) {
+    .header__theme-menu {
+        justify-content: center;
+        align-items: top;
+        padding-block-start: 20px;
+    }
+}
