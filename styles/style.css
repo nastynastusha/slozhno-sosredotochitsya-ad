@@ -2,16 +2,25 @@
 
 .page {
     position: relative;
+    /*background-image: var(--bg-url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    background: var(--bg-color);
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 100%;    
+
+    /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+}
+
+.header_wrapper {
     background-image: var(--bg-url);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /*background: var(--bg-color);*/
-    padding: 0 10px;
-    margin: 0 auto;
-
-    /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 @media (width >= 768px) {
@@ -24,7 +33,8 @@
     position: relative;
     height: 100vh;
     min-height: 667px;
-    /*margin: 10px 0;*/
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 .decorated-zone::after {
