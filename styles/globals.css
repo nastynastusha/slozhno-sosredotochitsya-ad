@@ -1,4 +1,9 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 
 *,
 *::before,
@@ -8,7 +13,7 @@
 
 body {
     min-inline-size: 375px;
-    /*max-inline-size: 1440px;*/
+    max-inline-size: 1440px;
     margin: 0;
     padding: 0;
     font-family: "IBM Plex Mono", monospace;
@@ -42,9 +47,4 @@ a {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-}
-
-section {
-    max-width: 1024px;
-    margin: 0 auto;
 }
